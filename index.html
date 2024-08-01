@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to the updated CSS file -->
+  </head>
+  <body>
+    <div class="container">
+      <!-- Container class for styling the main box -->
+      <h1>Finance Tracker</h1>
+      <form id="finance-form">
+        <input
+          type="text"
+          id="description"
+          placeholder="Enter description"
+          required
+        />
+        <!-- Added a placeholder and required attribute -->
+
+        <input type="number" id="amount" placeholder="Enter amount" required />
+        <!-- Added a placeholder and required attribute -->
+
+        <select id="type">
+          <!-- Dropdown for selecting income or expense -->
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+
+        <button type="submit">Add Entry</button>
+        <!-- Styled button with hover effects -->
+      </form>
+      <ul id="finance-list"></ul>
+      <!-- Unordered list for displaying entries -->
+      <div class="summary">
+        <!-- Summary section for displaying totals -->
+        <div class="total-income">Total Income: $0.00</div>
+        <div class="total-expenses">Total Expenses: $0.00</div>
+        <div class="remaining-budget">Remaining Budget: $0.00</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Link to the JavaScript file -->
+  </body>
+</html>
